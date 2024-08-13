@@ -259,14 +259,109 @@ nav button{
     font-weight: 900;
     margin-bottom: 10px;
 }
+/* BMI Calculator */
+.bmi
+{
+    width: 1440px;
+    height: 600px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.bmi-container
+{
+    
+    text-align: center;
+}
+
+.bmi-title
+{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.bmi-description
+{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    
+}
+
+.bmi-calculator
+{
+    background-color:#333;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.bmi-chart, .bmi-form
+{
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.bmi-chart-title
+{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.bmi-table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,td
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    opacity: 0.5;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+input
+{
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.bmi-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
 
 @media screen and (max-width: 576px){
     .navbar,
     .nav-Buttons,
     .banner-container,
     .card-container,
-    .run{
+    .run,
+    .bmi-calculator{
       flex-direction: column;
+      align-items: center;
+    }
+    .banner-container{
+        flex-wrap: wrap;
     }
     .navbar{
         width: 0;
@@ -293,8 +388,9 @@ nav button{
     .habits-container,
     .banner-img img,
     .run,
-    .run-info{
-        width: 100%
+    .run-info,
+    .bmi{
+        width: 100%;
     }
     .brand{
         margin: 0;
@@ -374,7 +470,10 @@ nav button{
     .video-link iframe{
         width: 100%;
         height: auto;
-        aspect-ratio: 16/9;
+        aspect-ratio: 11/7;
         align-items: center;
     } 
+    .bmi{
+        margin-top: 200px;
+    }
 }
