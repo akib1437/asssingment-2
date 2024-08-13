@@ -269,7 +269,6 @@ nav button{
 
 .bmi-container
 {
-    
     text-align: center;
 }
 
@@ -541,6 +540,7 @@ footer
     .run,
     .run-info,
     .bmi,
+    .bmi-container,
     .meet-container,
     .active-info{
         width: 100%;
