@@ -260,7 +260,6 @@ nav button{
 {
     width: 1440px;
     height: 600px;
-    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,7 +281,6 @@ nav button{
 {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    
 }
 
 .bmi-calculator
@@ -489,7 +487,6 @@ footer
 .foot-bott p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
-
 }
 @media screen and (max-width: 576px){
     .navbar,
@@ -503,15 +500,18 @@ footer
       flex-direction: column;
       align-items: center;
     }
+    body{
+        padding-left: 10px;
+    }
     .banner-container{
         flex-wrap: wrap;
     }
     .navbar{
-        width: 0;
-        padding-left: 20px;
-        align-items: start;
+        width: 380px;
+        /* padding-left: 20px; */
         flex-direction: row;
         justify-content: space-between;
+        gap: 50px;
     }
     body,
     .navbar,
@@ -533,16 +533,14 @@ footer
         font-size: 0.80rem;
     }
     body,
-    .navbar,
     .banner-info,
     .habits-container,
     .banner-img img,
     .run,
     .run-info,
-    .bmi,
-    .bmi-container,
     .meet-container,
-    .active-info{
+    .active-info
+    {
         width: 100%;
     }
     .brand{
@@ -560,6 +558,7 @@ footer
         font-size: 24px;
         color: #ffffff;
         cursor: pointer;
+        
      }
     .buttons{
         display: flex;
@@ -627,7 +626,11 @@ footer
         align-items: center;
     } 
     .bmi{
+        width: 400px;
         margin-top: 200px;
+    }
+    .bmi-calculator{
+        width: 400px;
     }
     .bmi-chart{
         margin-top: 30px;
