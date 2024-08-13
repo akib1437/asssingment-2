@@ -241,6 +241,25 @@ nav button{
     border-radius: 18px;
     margin-right: 32px;
 }
+/* active */
+.active{
+    margin-top: 100px;
+    margin-left: 193px;
+}
+.active-info{
+    width: 671px;
+    margin-right: ;
+}
+.active-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.active-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 576px){
     .navbar,
     .nav-Buttons,
@@ -260,7 +279,8 @@ nav button{
     .habits-container,
     .run,
     .run-info,
-    .run-img{
+    .run-img,
+    .active{
         margin: 0 auto;
         gap: 0;
     }
@@ -306,7 +326,7 @@ nav button{
         scale: .75;
         position: absolute;
         margin-left: -350px;
-    margin-top: 340px;
+        margin-top: 340px;
     }
     .banner-title{
         margin-top: 5px ;
@@ -323,10 +343,9 @@ nav button{
         margin-top: 200px;
     }
     .run{
-        width: 354px;
+        width: 345px;
         height: 531px;
         padding: 31px 33px 31px 35px;
-        
         align-items: center;
         margin-bottom: 35px;
     }
@@ -347,9 +366,15 @@ nav button{
         height: 170px;
         margin-top: 80px;
     }
-    .run-img{
-        
+    /* active */
+    
+    .active-description{
+        width: 330px;
     }
-    
-    
+    .video-link iframe{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        align-items: center;
+    } 
 }
