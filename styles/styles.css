@@ -206,11 +206,47 @@ nav button{
 .card-container img{
     border-radius: 50%;
 }
-
+/* run styles */
+.run{
+    border-radius: 18px;
+    background-color: rgb(34, 34, 34);
+    width: 1080px;
+    height: 370px;
+    margin-left: 198px;
+    margin-top: 100px;
+    gap: 165px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.run-info{
+    width: 443px;
+    height: 290px;
+    margin: 40px auto;
+    margin-left: 54px;
+}
+.run-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: auto;
+}
+.run-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+.run-img img{
+    width: 360px;
+    height: 300px;
+    border-radius: 18px;
+    margin-right: 32px;
+}
 @media screen and (max-width: 576px){
     .navbar,
     .nav-Buttons,
-    .banner-container{
+    .banner-container,
+    .card-container,
+    .run{
       flex-direction: column;
     }
     .navbar{
@@ -220,7 +256,11 @@ nav button{
     }
     body,
     .navbar,
-    .banner-container{
+    .banner-container,
+    .habits-container,
+    .run,
+    .run-info,
+    .run-img{
         margin: 0 auto;
         gap: 0;
     }
@@ -230,7 +270,10 @@ nav button{
     body,
     .navbar,
     .banner-info,
-    .banner-img img{
+    .habits-container,
+    .banner-img img,
+    .run,
+    .run-info{
         width: 100%
     }
     .brand{
@@ -266,7 +309,7 @@ nav button{
     margin-top: 340px;
     }
     .banner-title{
-        margin-top: auto;
+        margin-top: 5px ;
         font-size: 2.2rem;
     }
     .shape{
@@ -275,4 +318,39 @@ nav button{
     .banner-description{
         width: 400px;
     }
+    /* habits */
+    .habits{
+        margin-top: 200px;
+    }
+    .run{
+        width: 354px;
+        height: 531px;
+        padding: 31px 33px 31px 35px;
+        margin-left: 10px ;
+        margin-right: 10px;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    .run-info{
+        width: 287px;
+    }
+    .run-description{
+        margin-bottom: 10px;
+    }
+    .run-btn{
+        text-align: center;
+        align-items: center;
+        width: 207px;
+        margin-top: 0 auto;
+    }
+    .run-img img{
+        width: 287px;
+        height: 170px;
+        margin-top: 80px;
+    }
+    .run-img{
+        
+    }
+    
+    
 }
