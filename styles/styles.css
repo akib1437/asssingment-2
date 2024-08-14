@@ -5,13 +5,6 @@
 
  @import url('https://fonts.cdnfonts.com/css/miama');
 
-                
-
-.grey-qo {
-    font-family: "Grey Qo", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
   
 
 .inter {
@@ -355,7 +348,7 @@ input
     gap: 12px;
 }
 /* meet styles */
-section
+    section
     {
         justify-content: center;
         padding: 50px 0px;
@@ -520,7 +513,7 @@ footer
         flex-wrap: wrap;
     }
     .navbar{
-        width: 380px;
+        width: 375px;
         /* padding-left: 20px; */
         flex-direction: row;
         justify-content: space-between;
@@ -545,17 +538,23 @@ footer
         scale: 0.75;
         font-size: 0.80rem;
     }
+    header,
     body,
+    footer,
     .banner-info,
+    .banner-container,
     .habits-container,
     .banner-img img,
     .run,
     .run-info,
     .meet-container,
-    .active-info
+    .active-info,
+    .bmi-form,
+    .meet
     {
         width: 100%;
     }
+    
     .brand{
         margin: 0;
         font-size: 2rem;
@@ -581,7 +580,7 @@ footer
         scale: .75;
         position: absolute;
         margin-left: -190px;
-    margin-top: 100px;
+        margin-top: 100px;
     }
     .feature-badge-three{
         scale: .75;
@@ -601,10 +600,11 @@ footer
     }
     /* habits */
     .habits{
+        width: 375px;
         margin-top: 200px;
     }
     .run{
-        width: 345px;
+        width: 315px;
         height: 531px;
         padding: 31px 33px 31px 35px;
         align-items: center;
@@ -633,26 +633,39 @@ footer
         width: 330px;
     }
     .video-link iframe{
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         aspect-ratio: 11/7;
         align-items: center;
+        width: 375px;
     } 
     .bmi{
-        width: 400px;
+        width: 370px;
         margin-top: 200px;
     }
     .bmi-calculator{
-        width: 400px;
+        width: 370px;
+    }
+    .bmi-form{
+        width: 370px;
     }
     .bmi-chart{
         margin-top: 30px;
     }
     /* My teams */
-    section{
+    .meet{
         margin-top: 150px;
     }
     .meet-img-box{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .meet-container{
+        width: 375px;
+    }
+    footer{
+        width: 350px;
+    }
+    *{
+        margin-right: 0;
     }
 }
